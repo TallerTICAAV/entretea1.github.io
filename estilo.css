@@ -35,6 +35,10 @@ body {
 
 }
 
+a{
+    cursor: url('imagenes/raton.jpg'), auto;
+}
+
 div.sentostilo1 {
    display: flex;
    flex-direction: column;
