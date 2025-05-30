@@ -9,5 +9,5 @@ Hay algunas cosas que creo que es necesario remarcar:
 Repsoitorio de la revista de informatica
 
 Para visualizar la web:
-[https://quickgame2009.github.io/WebENTRETEA/](https://tallerticaav.github.io/entretea1.github.io/#)
+[https://quickgame2009.github.io/WebENTRETEA/](https://tallerticaav.github.io/entretea1.github.io/)
 
