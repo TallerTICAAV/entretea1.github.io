@@ -1,215 +1,159 @@
-/* RESET GENERAL */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* CUERPO */
-body {
-  background-image: url('imagenes/fondo.png');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 25px;
-  position: relative;
-  z-index: 1;
-  cursor: url('imagenes/raton.jpg'), auto;
-  font-family: monospace;
-  color: white;
-}
-
-/* CURSOR EN ENLACES */
-a {
-  cursor: url('imagenes/raton.jpg'), auto;
-}
-
-/* IMÁGENES RESPONSIVAS */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 10px auto;
-}
-
-/* TÍTULO PRINCIPAL */
 h1 {
-  background-color: rgba(0, 111, 152, 0.519);
-  font-size: 65px;
-  color: white;
-  font-weight: bold;
-  text-shadow: 2px 2px black;
-  text-align: center;
-  border: 5pt dotted;
-  border-color: red orange;
-  border-radius: 35pt;
-  padding: 20px;
-  width: fit-content;
-  margin: 0 auto;
+    background-color: rgba(0, 111, 152, 0.519);
+    font-size: 65px;
+    color: white;
+    font-weight: bold;
+    text-shadow:2px 2px black ;
+    text-align: center;
+    border: 5pt dotted;
+    border-color: red orange;
+    border-radius: 35pt;
+    padding: 20px;
+    width: fit-content;
+    margin: 0 auto;
 }
 
-/* TEXTO DE SUBTÍTULOS Y OTROS */
 p.sub {
-  text-align: center;
-  background-color: aliceblue;
-  font-size: 30pt;
-  border: 0;
+    text-align: center;
+    background-color: aliceblue;
+    border: 0pt;
+    font: 30pt;
 }
 
-/* ESTILO GENERAL DE SECCIONES */
+body {
+   background-image: url('imagenes/fondo.png');
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   padding: 25px;
+   position: relative;
+   z-index: 1;
+
+   cursor: url('imagenes/raton.jpg'), auto;
+
+}
+
 div.sentostilo1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: white;
-  text-shadow:
-    -1px -1px 0 black,
-     1px -1px 0 black,
-    -1px  1px 0 black,
-     1px  1px 0 black;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+
+   color: white;
+   text-shadow:
+      -1px -1px 0 black,
+       1px -1px 0 black,
+      -1px  1px 0 black,
+       1px  1px 0 black;
+
 }
 
 blockquote.sentostilo1 {
-  background-color: rgba(0, 0, 0, 0.25);
-  border-left: 5px solid rgb(0, 255, 0);
-  text-align: center;
-  font-size: 15px;
-  padding: 10px 20px;
-  color: rgb(192, 192, 192);
-  width: fit-content;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  font-family: monospace;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-left: 5px solid rgb(0, 255, 0);
+    text-align: center;
+    font-size: 10px;
+    padding: 10px 20px;
+    color: rgb(192, 192, 192);
+
+    width: 118ch;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-family: monospace;
+    width: fit-content;
+
 }
 
-/* TÍTULOS */
+
 h2.sentostilo1 {
-  text-align: center;
-  font-size: 50px;
+   text-align: center;
+   font-size: 50px;
 }
-
 h2.sentostilo1_1 {
-  text-align: center;
-  font-size: 40px;
-  background-color: rgba(3, 82, 32, 0.918);
-  border-radius: 15px;
-  margin: 15px auto;
-  padding: 10px;
-  font-weight: bold;
-  text-shadow: 2px 2px black;
-  border: 5pt dashed;
-  border-color: yellow paleturquoise;
-}
+   text-align: center;
+   font-size: 40px;
+   background-color: rgba(3, 82, 32, 0.918);
+   border-radius: 15px;
+   margin: 15 auto;
+   padding: 10px;
+   font-weight: bold;
+   text-shadow:2px 2px black;
+   border: 5pt dashed;
+   border-color: yellow paleturquoise
 
+}
 h3.sentostilo1 {
-  text-align: center;
-  font-size: 40px;
+   text-align: center;
+   font-size: 40px;
 }
 
-/* TEXTOS */
 p.sentostilo1 {
-  text-align: center;
-  font-size: 35px;
+   text-align: center;
+   font-size: 35px;
 }
 
 p.sentostilo2 {
-  text-align: center;
-  font-size: 20px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  font-family: monospace;
+   text-align: center;
+   font-size: 20px;
+   word-wrap: break-word;
+   overflow-wrap: break-word;
+   font-family: monospace;
 }
 
-/* LISTAS */
-li.sentostilo1 {
-    text-align: center;
 
+div.card-container {
+    perspective: 1000px;
+    display: inline-block;
+    margin: 20px;
 }
 
-/* CARTAS DE JUEGOS */
-.card-container {
-  perspective: 1000px;
-  display: inline-block;
-  margin: 20px;
-  width: 100%;
-  max-width: 600px;
+div.card {
+    width: 600px;
+    height: 300px;
+    transition: transform 0.75s;
+    transform-style: preserve-3d;
+    position: relative;
+    border-radius: 15px;
 }
 
-.card {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  position: relative;
-  border-radius: 15px;
+div.card:hover {
+    transform: rotateY(180deg);
 }
 
-.card:hover {
-  transform: rotateY(180deg);
-}
-
-.card-front, .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border: 5px solid white;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.card-front {
-  background-color: black;
-}
-
-.card-back {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  transform: rotateY(180deg);
-  padding: 15px;
-  text-align: center;
-  font-family: monospace;
-}
-
-/* MEDIA QUERIES PARA PANTALLAS PEQUEÑAS */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 40px;
-    padding: 15px;
-  }
-
-  h2.sentostilo1,
-  h2.sentostilo1_1,
-  h3.sentostilo1 {
-    font-size: 28px;
-  }
-
-  p.sentostilo1 {
-    font-size: 24px;
-  }
-
-  p.sentostilo2 {
-    font-size: 16px;
-  }
-
-  li.sentostilo1 {
-    font-size: 24px;
-  }
-
-  .card-container {
-    margin: 10px auto;
+div.card-front {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
     width: 100%;
-  }
+    height: 100%;
+    backface-visibility: hidden;
+    border: 5px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+}
 
-  .card {
-    aspect-ratio: 4 / 3;
-  }
+div.card-back {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+    font-family: monospace;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 5px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+}
 
-  blockquote.sentostilo1 {
-    font-size: 13px;
-    max-width: 90%;
-  }
+h2.title {
+    font: red;
+
+}
+
+li.sentostilo1 {
+   text-align: center;
+   font-size: 35px;
 }
